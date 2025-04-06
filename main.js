@@ -63,8 +63,15 @@ document.addEventListener("DOMContentLoaded", () => {
   const contrasteBtn = document.querySelector("#contraste"); // Selecciona el botón
   const body = document.body; // Selecciona el body
 
+document.addEventListener("DOMContentLoaded", () => {
+  const contrasteBtn = document.querySelector("#contraste"); // Selecciona el botón
+  const body = document.body; // Selecciona el body
+  const inicioSection = document.querySelector(".inicio"); // Selecciona la sección inicio
+
   // Evento para alternar el modo contraste
   contrasteBtn.addEventListener("click", () => {
-    body.classList.toggle("modo-contraste"); // Añade o quita la clase
+    body.classList.toggle("modo-contraste"); // Añade o quita la clase al body
+    inicioSection.classList.toggle("modo-contraste-seccion"); // Añade o quita una clase específica a la sección
   });
 });
+
